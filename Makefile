@@ -1,10 +1,14 @@
-start:
-	docker run -e JUPYTER_ENABLE_LAB=yes --rm -p 8888:8888 -v `pwd`:/home/jovyan jupyter/scipy-notebook
+IMAGE=jupyter_tf
 
 DATASET_PATH=in/treebank
 DATASET_NAME=iswoc-treebank
+
 INDEX_IN=$(DATASET_NAME).txt
 INDEX_OUT=$(DATASET_PATH)/index.txt
+
+start:
+	docker run -e JUPYTER_ENABLE_LAB=yes --rm -p 8888:8888 -v `pwd`:/home/jovyan $(IMAGE)
+
 download:
 	@mkdir -p data
 	@mkdir -p $(DATASET_PATH)
@@ -13,3 +17,6 @@ download:
 
 clean:
 	rm -f $(DATASET_PATH)/*
+
+build:
+	docker build -t $(IMAGE) ci
