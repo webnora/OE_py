@@ -6,6 +6,7 @@ DATASET_NAME=iswoc-treebank
 INDEX_IN=$(DATASET_NAME).txt
 INDEX_OUT=$(DATASET_PATH)/index.txt
 download:
+	@mkdir mkdir -p data ||:
 	@mkdir mkdir -p $(DATASET_PATH) ||:
 	@awk -F '\t' '{print $$3}' $(INDEX_IN) > $(INDEX_OUT)
 	@./$(DATASET_NAME).sh $(DATASET_PATH) $(INDEX_OUT)
