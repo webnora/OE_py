@@ -8,6 +8,3 @@ wiktwords in/enwiktionary-latest-pages-articles.xml.bz2 --out out/oe.txt --langu
 
 ## NLP Transformer documentation
 https://www.tensorflow.org/tutorials/text/transformer?hl=ru
-
-## CoNLL-X and CoNLL-U file readers and writers
-https://raw.githubusercontent.com/pnugues/ilppp/master/programs/labs/relation_extraction/python/conll.py
