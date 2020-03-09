@@ -1,0 +1,6 @@
+Ælfric's Lives of Saints	Old English	æls	3137 tokens
+Apollonius of Tyre	Old English	apt	5541 tokens
+Anglo-Saxon Chronicles	Old English	chrona	5939 tokens
+Orosius	Old English	or	1728 tokens
+West-Saxon Gospels	Old English	wscp	13061 tokens
+La Vie Saint Eustace	Old French	eustace	2340 tokens
