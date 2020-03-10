@@ -7,7 +7,7 @@ INDEX_IN=$(DATASET_NAME).txt
 INDEX_OUT=$(DATASET_PATH)/index.txt
 
 start:
-	docker run -e JUPYTER_ENABLE_LAB=yes --rm -p 8888:8888 -v `pwd`:/home/jovyan $(IMAGE)
+	docker run -e JUPYTER_ENABLE_LAB=yes --rm -p 8888:8888 -v `pwd`:/home/jovyan/src $(IMAGE)
 
 download:
 	@mkdir -p data
