@@ -20,3 +20,6 @@ clean:
 
 build:
 	docker build -t $(IMAGE) ci
+
+download_cltk:
+	wget https://raw.githubusercontent.com/cltk/old_english_models_cltk/master/data/oe.lemmas_inv -P in
