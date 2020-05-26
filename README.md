@@ -8,3 +8,6 @@ wiktwords in/enwiktionary-latest-pages-articles.xml.bz2 --out out/oe.txt --langu
 
 ## NLP Transformer documentation
 https://www.tensorflow.org/tutorials/text/transformer?hl=ru
+
+## SPA
+https://nlp-tymen.github.io/OElem/
